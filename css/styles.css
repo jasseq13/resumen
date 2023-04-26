@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap');
-
 
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
 *  cuyos valores asigna por defecto el navegador.
@@ -8,65 +6,102 @@
 .menu a {
     text-decoration: none;
     color: inherit;
-    background-color: beige;
+    align-content: stretch;
     text-align: right;
+ 
 
+}
+.menu {
+    box-shadow: .5rem .5rem 1rem#565959;
+    border: none;
+    border-radius: 5px;
 }
 /* Reset */
 * {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
-    margin: 0;
+    margin: 8px;
     padding: 0;
     /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
 }
 
-/* Para quitar los puntos a los items de listas */
+
 ul {
     list-style: none;
 }
 
 /* Para que los enlaces hereden el color de texto y no tengan subrayado */
-.inicio a {
+#inicio button a {
+    
     padding-inline: 0;
     margin-inline-start: auto;
     text-decoration: none;
     color: inherit;
-    text-align: center;
-    
+
     
 }
+#inicio button {
+    border: 0;
+    display: flex;
+    border-radius: 10px;
+    background-color: #20f5a5;
+    font-size: 20px;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+    align-content: center;
+    padding: 16px 24px;
+    margin: 10px;
 
-/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
-*  el margin: auto; para tenerlo centrado fácilmente ;)
-*/
+}
+
+
 main {
     max-width: 1200px;
     margin: auto;
 }
 body{
-    background-color: bisque;
+    background-color: #b8fad3;
 }
-.inicio img {
+#inicio img {
    
-    border-radius: 50%;
-    width: 200px;
+    border-radius: 45%;
+    width: 250px;
     text-align: center;
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
 }
-/* Recomendaciones! 
-*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-*
-*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
-*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
-*
-*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
-*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
-*
-*  - Usen mucho las herramientas para desarrolladores del navegador para ir
-*    probando el CSS que escriben, resolver dudas y problemas.
-*
-*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
-*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
-*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
-*/
+#contacto img{
+
+    width: 60px;
+    display: flex;
+    margin: 10px;
+    
+}
+h1
+ {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#iconos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hablemos{
+background-color: aquamarine;
+border-radius: 10px;
+padding: 16px 24px;
+
+}
+footer{
+    text-align: right;
+    background-color: #3cd1d3;
+    padding: 0;
+    margin: 0;
+    
+}
