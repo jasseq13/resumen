@@ -1,8 +1,4 @@
 
-
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*  cuyos valores asigna por defecto el navegador.
-*/
 .menu a {
     text-decoration: none;
     color: inherit;
@@ -15,31 +11,24 @@
     box-shadow: .5rem .5rem 1rem#565959;
     border: none;
     border-radius: 5px;
+    text-align: right;
 }
-/* Reset */
+
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     margin: 8px;
     padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
+    display: flexbox;
 }
 
-
-ul {
-    list-style: none;
-}
-
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
 #inicio button a {
     
     padding-inline: 0;
     margin-inline-start: auto;
     text-decoration: none;
-    color: inherit;
-
-    
+    color: inherit; 
 }
 #inicio button {
     border: 0;
@@ -61,6 +50,7 @@ main {
     max-width: 1200px;
     margin: auto;
 }
+
 body{
     background-color: #b8fad3;
 }
@@ -75,17 +65,19 @@ body{
     justify-content: center;
     
 }
+
 #contacto img{
 
     width: 60px;
     display: flex;
-    margin: 10px;
-    
+    margin: 10px;   
 }
+
 h1
  {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 #iconos {
     display: flex;
     justify-content: space-between;
@@ -103,5 +95,7 @@ footer{
     background-color: #3cd1d3;
     padding: 0;
     margin: 0;
+    font-style: oblique;
+    font-weight: bolder;
     
 }
