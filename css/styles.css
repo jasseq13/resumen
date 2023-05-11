@@ -11,10 +11,11 @@
     border: none;
     border-radius: 5px;
     text-align: right;
+    display: flexbox;
 }
 
 .menu img {
-    display: flex;
+    display: flexbox;
     width: 80px;
     text-align: left;
     margin: 0;
